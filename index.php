@@ -35,7 +35,7 @@ session_start();
     <?php else : ?>
         <div class="chat-container">
             <h3>Ask OpenAI</h3>
-            <textarea id="userInput" rows="4"></textarea>
+            <textarea id="userInput" rows="14"></textarea>
             <button onclick="askAI()">Send Request</button>
             <div id="response">Waiting...</div>
         </div>
@@ -75,7 +75,7 @@ async function loadPrompts() {
         container.innerHTML += `
             <div style="margin-bottom: 10px;">
                 <small>Prompt ID: ${id}</small>
-                <textarea id="area-${id}" style="width:100%" rows="3" >${text}</textarea>
+                <textarea id="area-${id}" style="width:100%" rows="15" >${text}</textarea>
                 <button onclick="savePrompt(${id})">Save #${id}</button>
             </div>
         `;
